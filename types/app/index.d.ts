@@ -15,3 +15,8 @@ export interface CardWrapperProps {
 export interface HeaderProps {
   label: string;
 }
+
+export interface BackButtonProps {
+  href: string;
+  label: string;
+}

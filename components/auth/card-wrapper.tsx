@@ -4,6 +4,7 @@ import { CardWrapperProps } from "@/types/app";
 import { Card, CardHeader, CardFooter, CardContent } from "../ui/card";
 import { Header } from "./header";
 import SocialMedia from "./social";
+import BackButton from "./back-button";
 
 export const CardWrapper = ({
   children,
@@ -23,6 +24,9 @@ export const CardWrapper = ({
           <SocialMedia />
         </CardFooter>
       )}
+      <CardFooter>
+        <BackButton href={backButtonHref} label={backButtonLabel} />
+      </CardFooter>
     </Card>
   );
 };
