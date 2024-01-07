@@ -22,8 +22,8 @@ export interface BackButtonProps {
 }
 
 export interface FormErrorProps {
-  errorMsg: string;
+  errorMsg: string | undefined;
 }
 export interface FormSuccessProps {
-  successMsg: string;
+  successMsg: string | undefined;
 }
