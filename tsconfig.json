@@ -28,7 +28,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/types/app/page.tsx",
-    ".next/types/app/register/page.tsx"
+    ".next/types/app/register/page.tsx",
+    "wdio-tests/tests",
+    "wdio-tests/wdio.conf.ts"
   ],
   "exclude": ["node_modules"]
 }
