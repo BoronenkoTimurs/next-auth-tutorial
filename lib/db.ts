@@ -13,7 +13,7 @@ export const db =
 if (process.env.NODE_ENV !== "production") {
   globalThis.prisma = db;
 
-  process.on("beforeExit", async () => {
-    await db.$disconnect();
-  });
+  // process.on("beforeExit", async () => {
+  //   await db.$disconnect();
+  // });
 }
