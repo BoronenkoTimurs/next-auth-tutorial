@@ -1,3 +1,5 @@
+import { UserRole } from "@prisma/client";
+import "next-auth";
 export interface LoginButtonProps {
   children: React.ReactNode;
   mode?: "modal" | "redirect";
@@ -26,4 +28,16 @@ export interface FormErrorProps {
 }
 export interface FormSuccessProps {
   successMsg: string | undefined;
+}
+
+declare module "next-auth" {
+  interface User {
+    role?: UserRole;
+  }
+  interface Session {
+    user?: User;
+  }
+  interface JWT {
+    role?: UserRole;
+  }
 }
